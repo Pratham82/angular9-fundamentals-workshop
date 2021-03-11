@@ -1,12 +1,18 @@
 <mat-card>
-    <mat-card-header>
-      <mat-card-title>
-        Course Outline
-      </mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-
-      <!-- LESSON LIST -->
-      
-    </mat-card-content>
-  </mat-card>
+  <mat-card-header>
+    <mat-card-title> Course Outline </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <!-- LESSON LIST -->
+    <h2 [style.color]="themeColor">This is colored Text</h2>
+    <hr />
+    <h3>themeColor: {{ themeColor }}</h3>
+    <mat-label>Theme Color</mat-label>
+    <input matInput [(ngModel)]="themeColor" />
+    <br />
+    <br />
+    <button mat-raised-button color="primary" (click)="updateColor()">
+      Update
+    </button>
+  </mat-card-content>
+</mat-card>

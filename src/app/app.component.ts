@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'Angular 9 Fundamentals';
   links = [
@@ -12,5 +13,5 @@ export class AppComponent {
     { path: '/courses', icon: 'view_list', title: 'Courses' },
   ];
 
-  constructor() {}
+  constructor() { }
 }
