@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
 
   welcome_Message = 'Hello There'
   themeColor = "red"
+  currentLesson = null
   courseLessons = [
     { title: 'Hello Angular' },
     { title: 'Component Fundamentals' },
@@ -26,6 +27,11 @@ export class HomeComponent implements OnInit {
   }
   updateColor() {
     this.themeColor = 'yellow'
+  }
+
+  selectLesson(lesson) {
+    console.log(lesson);
+    this.currentLesson = lesson
   }
 
 }
